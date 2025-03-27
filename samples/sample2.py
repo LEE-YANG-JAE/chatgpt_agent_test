@@ -2,9 +2,8 @@ import asyncio
 import random
 from typing import Any
 
+from agents import Agent, AgentHooks, RunContextWrapper, Runner, Tool, function_tool
 from pydantic import BaseModel
-
-from agents import Agent, AgentHooks, RunContextWrapper, Runner, Tool, function_tool, set_default_openai_key
 
 
 class CustomAgentHooks(AgentHooks):

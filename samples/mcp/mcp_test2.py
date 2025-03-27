@@ -5,7 +5,7 @@ import subprocess
 import time
 from typing import Any
 
-from agents import Agent, Runner, gen_trace_id, trace, set_default_openai_key
+from agents import Agent, Runner, gen_trace_id, trace
 from agents.mcp import MCPServer, MCPServerSse
 from agents.model_settings import ModelSettings
 

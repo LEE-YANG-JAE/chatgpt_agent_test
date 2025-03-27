@@ -1,7 +1,7 @@
 import asyncio
 import shutil
 from pathlib import Path
-from agents import Agent, Runner, gen_trace_id, trace, set_default_openai_key
+from agents import Agent, Runner, gen_trace_id, trace
 from agents.mcp import MCPServer, MCPServerStdio
 from openai.types.responses import ResponseTextDeltaEvent
 

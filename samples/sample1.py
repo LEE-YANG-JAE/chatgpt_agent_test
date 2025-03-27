@@ -1,6 +1,7 @@
-from agents import Agent, Runner, set_default_openai_key
-from openai.types.responses import ResponseTextDeltaEvent
 import asyncio
+
+from agents import Agent, Runner
+from openai.types.responses import ResponseTextDeltaEvent
 
 math_tutor_agent = Agent(
     name="Math Tutor",

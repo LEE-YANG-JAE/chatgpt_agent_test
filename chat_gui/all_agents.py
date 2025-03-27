@@ -11,13 +11,7 @@ def create_merged_agent(handoff_agents):
     return Agent(
         name="MergedAgent",
         instructions="""
-You are a merged (triage) agent. 
-- If the user's query involves reading files, or other filesystem operations,
-  produce "HANDOFF 0: <user's request>" to delegate to the first agent in handoffs.
-- Otherwise, answer directly with your knowledge.
-
-To do a handoff, you MUST output exactly:
-HANDOFF <index>: <the user's request>
+만약에 파일 관련 처리를 해야 한다면 FilesystemAgent 를 사용하여 처리를 하자. 그 외에는 알아서 답변 잘하자.
 """,
         handoffs=handoff_agents
     )

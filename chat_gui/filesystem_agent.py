@@ -10,8 +10,7 @@ def create_filesystem_agent(mcp_server):
     return Agent(
         name="FilesystemAgent",
         instructions="""
-I handle filesystem operations. 
-If the user says "read test.txt", I will call fs.read_file(['test.txt']).
+Use the tools to read the filesystem and answer questions based on those files.
 """,
         mcp_servers=[mcp_server]
     )
